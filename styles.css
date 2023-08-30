@@ -1,0 +1,85 @@
+body {
+	background-image:url('wood.png');
+	padding:0;
+	margin:0;
+	font-family: Segoe UI;
+}
+button {
+	display: flex;
+	color:white;
+	background: rgb(123 129 0 / 80%);
+	float:left;
+	margin: 5px;
+	padding: 5px;
+	font-family: Segoe UI Light;
+	font-size:18pt;
+	cursor: pointer;
+	border-bottom: 3px solid #000;
+	border-right: 3px solid #000;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: center;
+	justify-content: space-around;
+	align-items: center;
+}
+button:hover {
+	background: rgb(173 182 0);
+}
+button:active {
+	background:rgba(64,64,64,1);
+
+}
+button img {
+	vertical-align:middle;
+	padding-right: 10px;
+}
+button p {
+	vertical-align:middle;
+}
+/************ Classes ************/
+
+/* Postick's button "delete" */
+.delete {
+	cursor:pointer;
+	font-size:120%;
+	color:#000000;
+}
+
+
+.postick {
+	border:1px solid gray;
+	width:200px;
+	height:200px;
+	padding:4px;
+	font-size:85%;
+	background:#FFFC7F;
+	-moz-box-shadow:2px 2px 2px #999999;
+	-webkit-box-shadow:2px 2px 2px #999999;
+	box-shadow:2px 2px 2px #999999;
+	position:absolute;
+}
+
+.toolbar {
+	text-align:right;
+	font-weight:bold;
+}
+
+/* Content to be editable inside the postick */
+
+.editable {
+	cursor:pointer;
+	height:180px;
+	marging:0 auto;
+	width:100%;
+	overflow:hidden;
+	position:relative;
+	-moz-text-shadow: 1px 1px 0px white;
+	text-shadow: 1px 1px 0px white;
+	color:#000000;
+}
+
+.editable:hover {
+	border:1px dotted gray;
+}
+
+
