@@ -40,8 +40,8 @@ button p {
 }
 /************ Classes ************/
 
-/* Postick's button "delete" */
-.delete {cursor: pointer;line-height: 17px;font-weight: bold;height: 100%;}
+/* Botão "delete" do Postick */
+.delete {cursor: pointer;line-height: 17px;font-weight: bold;height: 100%;display: flex;}
 
 
 .postick {
@@ -73,21 +73,44 @@ button p {
 	background-color: #7d7b0e;
 }
 
-/* Content to be editable inside the postick */
+/* Conteúdo a ser editável dentro do postick */
 
 .editable {
-	cursor:pointer;
+	overflow-y: scroll;
+	cursor: text;
 	height: 170px;
 	margin: 0 auto;
-	width:100%;
-	overflow:hidden;
+	width: auto;
 	position:relative;
 	-moz-text-shadow: 1px 1px 0px white;
 	text-shadow: 1px 1px 0px white;
 	color:#000000;
 	border: none;
+	box-shadow: 0 0 0 0;
+	border: 0 none;
+	outline: 0;
+	padding: 0 5px;
 }
 
 .editable:hover {
 	border:1px dotted gray;
+}
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+/* Personalizando barra de rolagem */
+
+::-webkit-scrollbar-track {
+    background-color: #fffc7f;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background: #7d7b0e;
+}
+::-webkit-scrollbar-thumb {
+    background: #7d7b0e;
 }
