@@ -5,22 +5,24 @@ body {
 	font-family: Segoe UI;
 }
 button {
+	width: 100%;
 	display: flex;
 	color:white;
 	background: rgb(123 129 0 / 80%);
 	float:left;
-	margin: 5px;
+	margin: 10px 0;
 	padding: 5px;
 	font-family: Segoe UI Light;
 	font-size:18pt;
 	cursor: pointer;
-	border-bottom: 3px solid #000;
-	border-right: 3px solid #000;
 	flex-direction: row;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	align-content: center;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
+	-moz-box-shadow: 2px 2px 2px #999999;
+	-webkit-box-shadow: 2px 2px 2px #999999;
+	box-shadow: 2px 2px 2px #000000;
 }
 button:hover {
 	background: rgb(173 182 0);
@@ -39,47 +41,53 @@ button p {
 /************ Classes ************/
 
 /* Postick's button "delete" */
-.delete {
-	cursor:pointer;
-	font-size:120%;
-	color:#000000;
-}
+.delete {cursor: pointer;line-height: 17px;font-weight: bold;height: 100%;}
 
 
 .postick {
-	border:1px solid gray;
+	border: 1px solid black;
 	width:200px;
 	height:200px;
-	padding:4px;
+	padding: 0;
 	font-size:85%;
 	background:#FFFC7F;
 	-moz-box-shadow:2px 2px 2px #999999;
 	-webkit-box-shadow:2px 2px 2px #999999;
-	box-shadow:2px 2px 2px #999999;
+	box-shadow: 2px 2px 2px #000000;
 	position:absolute;
 }
 
 .toolbar {
-	text-align:right;
-	font-weight:bold;
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: nowrap;
+	align-content: center;
+	justify-content: flex-start;
+	align-items: flex-start;
+	font-size: 2.5em;
+	height: 25px;
+	color: #000;
+	cursor: all-scroll;
+	padding: 0 5px 5px;
+	cursor: all-scroll;
+	background-color: #7d7b0e;
 }
 
 /* Content to be editable inside the postick */
 
 .editable {
 	cursor:pointer;
-	height:180px;
-	marging:0 auto;
+	height: 170px;
+	margin: 0 auto;
 	width:100%;
 	overflow:hidden;
 	position:relative;
 	-moz-text-shadow: 1px 1px 0px white;
 	text-shadow: 1px 1px 0px white;
 	color:#000000;
+	border: none;
 }
 
 .editable:hover {
 	border:1px dotted gray;
 }
-
-
