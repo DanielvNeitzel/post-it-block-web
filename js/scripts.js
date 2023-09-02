@@ -58,6 +58,7 @@
 
     //Quando o documento estiver pronto, torne todos os posticks arrastáveis
     $(document).ready(function () {
+    	$( ".ui-resizable" ).resizable();
         $(".postick").draggable({
             cancel: '.editable',
 			"zIndex": 3000,
