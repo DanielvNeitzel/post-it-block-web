@@ -93,7 +93,7 @@ button p {
 }
 
 .editable:hover {
-	border:1px dotted gray;
+	border: none;
 }
 
 textarea:focus, input:focus, select:focus {
